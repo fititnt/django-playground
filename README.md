@@ -1,10 +1,11 @@
 # django-playground
+**Rocha's playground for Django (https://www.djangoproject.com/). Not really
+useful for other, it's just me playing around a new framework/language for me**.
 
-> TODO: Feito até 4. Ir até parte 5 e depois https://docs.djangoproject.com/en/3.0/intro/tutorial05/
-
-## Step by step
+## Step by step (Django part)
 
 ```bash
+### Tutorial Writing your first Django app, START ______________________________
 # @see https://docs.djangoproject.com/en/3.0/intro/tutorial01/
 
 # Install
@@ -43,6 +44,51 @@ python manage.py migrate
 # @see https://docs.djangoproject.com/en/3.0/intro/tutorial04/
 # (...)
 
-# Code to test polls
+# @see https://docs.djangoproject.com/en/3.0/intro/tutorial05/ (automated testing)
+# (...)
+
+# Command to test polls
 python manage.py test polls
+
+# @see https://docs.djangoproject.com/en/3.0/intro/tutorial06/ (static files)
+# (...)
+
+# @see https://docs.djangoproject.com/en/3.0/intro/tutorial07/
+# (...)
+
+# to see where base django templates where stored
+python -c "import django; print(django.__path__)"
+
+### Tutorial Writing your first Django app, ended! _____________________________
+
+### Advanced tutorial: How to write reusable apps, start _______________________
+# @see https://docs.djangoproject.com/en/3.0/intro/reusable-apps/
+cd django-polls
+python setup.py sdist
+
+cd ..
+
+# Install
+python -m pip install --user django-polls/dist/django-polls-0.1.tar.gz
+
+# Remove
+python -m pip uninstall django-polls
+
+### Advanced tutorial: How to write reusable apps, ended! ______________________
 ```
+
+- **URLs**
+  - <http://127.0.0.1:8000/polls/>
+  - <http://127.0.0.1:8000/admin/>
+
+## Step by step (Docker part)
+
+```bash
+# @see https://docs.docker.com/compose/django/
+# (...)
+docker-compose up
+```
+
+- **URLs** (via docker)
+  - <http://127.0.0.1:8000/polls/>
+  - <http://127.0.0.1:8000/admin/>
