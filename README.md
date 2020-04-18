@@ -1,5 +1,8 @@
 # django-playground
 
+> TODO: Feito até 4. Ir até parte 5 e depois https://docs.djangoproject.com/en/3.0/intro/tutorial05/
+
+## Step by step
 
 ```bash
 # @see https://docs.djangoproject.com/en/3.0/intro/tutorial01/
@@ -16,7 +19,6 @@ python manage.py migrate
 # Start server
 python manage.py runserver
 
-
 # Create polls app (dir pools/)
 
 python manage.py createsuperuser
@@ -31,4 +33,16 @@ python manage.py createsuperuser
 
 python manage.py makemigrations polls
 python manage.py migrate
+
+# @see https://docs.djangoproject.com/en/3.0/intro/tutorial02/
+# (...)
+
+# @see https://docs.djangoproject.com/en/3.0/intro/tutorial03/
+# (...)
+
+# @see https://docs.djangoproject.com/en/3.0/intro/tutorial04/
+# (...)
+
+# Code to test polls
+python manage.py test polls
 ```
